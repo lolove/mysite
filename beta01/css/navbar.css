@@ -1,0 +1,40 @@
+nav{
+    overflow: hidden;
+    padding: 20px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+nav > img{
+    padding: 14px 0px;
+}
+
+nav > a{
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 40px;
+    text-decoration: none;
+}
+
+nav >a.selected{
+    color:#EFC862;
+}
+
+nav > a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #EFC862;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+
+nav > a:hover::after{
+    width: 100%;
+}

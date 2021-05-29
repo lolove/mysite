@@ -1,0 +1,30 @@
+@media (max-width:768px){
+    .secondCP{
+        background: linear-gradient(to right,#313132, #161618);
+        display: grid;
+        grid-template-columns: 50% auto;
+    }
+    
+    .secondCP > img#myPic{
+        max-width: 65%;
+        height: auto;
+        margin: auto;
+    }
+    
+    .secondCP > .textBox{
+        margin: auto;
+        text-align:left;
+        padding-right: 100px;
+    }
+    
+    .secondCP > .textBox > h2{
+        font-size: 30px;
+        color: #7895AA;
+        padding-bottom: 40px;
+    }
+    
+    .secondCP > .textBox > p{
+        font-size: 22px;
+        color: white;
+    }
+}

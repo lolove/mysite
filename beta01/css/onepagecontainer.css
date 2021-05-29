@@ -1,0 +1,125 @@
+.onePageContainer{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#313132, #161618);
+}
+
+.onePageContainer > .textBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* opacity: 0.0; */
+    
+}
+
+.onePageContainer > .textBox h1{
+
+    opacity: 0;
+    
+    font-size: 72px;
+    background: linear-gradient(to right,rgba(252,252,252,0.5), #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: both;
+}
+
+.onePageContainer > .textBox h2{
+    font-size: 45px;
+    background: linear-gradient(to right,rgba(252,252,252,0.5), #FFFFFF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.onePageContainer > .textBox h2#hi{
+    opacity: 0;
+    position: absolute;
+    top: -15%;
+    left: -35%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+.onePageContainer > .textBox h2#Im{
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: -35%;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+.onePageContainer > .textBox h3{
+    opacity: 0;
+    text-align: center;
+    font-size: 55px;
+    color: #78AA9B;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 3.5s;
+    animation-fill-mode: both;
+}
+
+.onePageContainer > .textBox h4{
+    opacity: 0;
+    text-align: center;
+    font-size: 40px;
+    color: #7895AA;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+.onePageContainer > #backgroundImg01{
+    width: 100%;
+}
+
+.onePageContainer > .nextBox{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    width: 100%;
+    height: auto;
+    position:absolute;
+    transform: translate(-50%,-0%);
+    bottom: 0%;
+    left: 50%;
+    text-align: center;
+    background: rgba(63, 62, 62, 0.42);
+}
+
+.onePageContainer > .nextBox > h1{
+    color: white;
+    font-size: medium;
+}
+
+.onePageContainer > .nextBox > img{
+    max-width: 30%;
+    height: auto;
+}
+
+/* Animation */
+/* Fandin */
+
+@keyframes fadeIn {
+    0%   {opacity: 0;}
+    25%   {opacity: 0.25;}
+    50%   {opacity: 0.5;}
+    75%   {opacity: 0.75;}
+    100% {opacity: 1.0;}
+}
+  
+.animation{
+    animation-fill-mode: both;
+    animation-direction: 1s;
+}
+
+
